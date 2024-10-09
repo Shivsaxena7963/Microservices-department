@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "487c8e30-da1d-4f81-8b40-1f865c732320",
+		"name": "Department-ms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37427192"
+	},
+	"item": [
+		{
+			"name": "create-department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"departmentName\": \"science\",\r\n  \"departmentContactNo\": \"9821138918\",\r\n  \"departmentEmail\": \"shivsaxena@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDepartment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "7858452563",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9091/api/fetchDepartment?mblNo=9821138918",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"fetchDepartment"
+					],
+					"query": [
+						{
+							"key": "mblNo",
+							"value": "9821138918"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllDepartments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9091/api/fetchAllDepartments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"fetchAllDepartments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
