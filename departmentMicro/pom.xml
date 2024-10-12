@@ -96,7 +96,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+
 				<configuration>
+
+						<image>
+							<name>department/${project.artifactId}:s1</name>
+						</image>
+
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -104,6 +110,7 @@
 						</exclude>
 					</excludes>
 				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
