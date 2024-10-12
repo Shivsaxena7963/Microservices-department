@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.department</groupId>
-	<artifactId>departmentMicro</artifactId>
+	<artifactId>departmentmicro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>departmentMicro</name>
 	<description>Project for user nmicroservice</description>
