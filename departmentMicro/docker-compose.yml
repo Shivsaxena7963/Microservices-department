@@ -1,0 +1,28 @@
+services:
+  department:
+    image: "shivsaxena7963/departmentmicro:s1"
+    ports:
+      - 8081:9091
+    deploy:
+      resources:
+        limits:
+          memory: 701m
+    networks:
+      - departmentMs
+
+
+services:
+  users:
+    image: "shivsaxena7963/userMicro:s1"
+    ports:
+      - 8081:9091
+    deploy:
+      resources:
+        limits:
+          memory: 701m
+    networks:
+      - departmentMs
+
+
+
+

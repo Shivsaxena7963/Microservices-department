@@ -1,8 +1,7 @@
 package com.user.userMicro.exception;
 
-import com.department.departmentMicro.dto.ResponseErrorDto;
-import com.department.departmentMicro.exception.ResourceAlreadyExistException;
-import com.department.departmentMicro.exception.ResourceNotFoundException;
+
+import com.user.userMicro.dto.ResponseErrorDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

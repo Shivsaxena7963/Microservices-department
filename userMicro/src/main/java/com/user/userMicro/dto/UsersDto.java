@@ -1,26 +1,32 @@
 package com.user.userMicro.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class UsersDto {
 
 
-    private Long departmentId;
+    private int userId;
 
-    @NotEmpty(message = "Department name should not be empty")
-    private String departmentName;
+    private String name;
 
-    @NotEmpty(message = "Department contact no should not be empty")
-    @Size(min = 10,max = 10,message = "Contact no must be of 10 digit")
-    private String departmentContactNo;
+    private String email;
 
-    @NotEmpty(message = "email id can not be empty")
-    @Email(message = "pls enter valid email id")
-    private String departmentEmail;
+    private String password;
+
+    private String address;
+
+    private String about;
+    private String gender;
+    private String phone;
+    private Date date;
+    private boolean  active;
+
+
 }
