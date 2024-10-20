@@ -1,0 +1,6 @@
+yum install git -y
+ yum install docker -y
+
+yum install maven -y
+systemctl start docker
+git clone https://github.com/Shivsaxena7963/Microservices-department.git
