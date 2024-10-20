@@ -11,9 +11,8 @@ services:
       - departmentMs
 
 
-services:
   users:
-    image: "shivsaxena7963/userMicro:s1"
+    image: "shivsaxena7963/usermicro:s1"
     ports:
       - 8081:9091
     deploy:
@@ -23,6 +22,18 @@ services:
     networks:
       - departmentMs
 
+  eureka:
+    image: "shivsaxena7963/eureka:s1"
+    ports:
+      - 8083:8761
+    deploy:
+      resources:
+        limits:
+          memory: 701m
+    networks:
+      - departmentMs
 
-
+networks:
+  departmentMs:
+    driver: bridge
 

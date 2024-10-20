@@ -11,7 +11,7 @@
 	<groupId>com.user</groupId>
 	<artifactId>userMicro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>userMicro</name>
+	<name>usermicro</name>
 	<description>Project for user nmicroservice</description>
 	<url/>
 	<licenses>
